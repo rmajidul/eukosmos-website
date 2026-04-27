@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EuKosmos — All-in-One Academic Research Manager</title>
+<meta name="description" content="EuKosmos is a local-first academic research manager. Manage papers, notes, BibTeX, CV, and ideas in one portable folder — with automatic DOI enrichment from ADS, arXiv, InspireHEP, CrossRef, OpenAlex, and Semantic Scholar.">
+<meta property="og:title" content="EuKosmos — Academic Research Manager">
+<meta property="og:description" content="Local-first. DOI-powered. Your research, fully yours.">
+<meta property="og:image" content="/assets/og-image.png">
+<meta property="og:url" content="https://eukosmos.com">
+<meta name="theme-color" content="#05080f">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════ NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">EU<span>KOSMOS</span></a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#databases">Databases</a></li>
+        <li><a href="#workflow">How It Works</a></li>
+        <li><a href="#extension">Extension</a></li>
+        <li><a href="/docs">Documentation</a></li>
+      </ul>
+      <a href="#download" class="nav-cta">⬇ Download</a>
+      <button class="nav-hamburger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════ HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-glow"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-tag">Local-First · Open Source · No Subscription</div>
+
+      <h1 class="hero-title">
+        Your Research.<br>
+        <em>Fully Yours.</em>
+      </h1>
+
+      <p class="hero-subtitle">
+        EuKosmos is an all-in-one academic research manager that lives on your machine.
+        Papers, notes, BibTeX, CV, ideas and collaborators — enriched automatically
+        from every major database, stored in a portable folder you own forever.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#download" class="btn-primary">
+          ⬇ &nbsp;Download Free
+        </a>
+        <a href="https://github.com/rmajidul/eukosmos" class="btn-secondary" target="_blank" rel="noopener">
+          ⎇ &nbsp;View on GitHub
+        </a>
+        <a href="#demo" class="btn-secondary">
+          ▶ &nbsp;Live Demo
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num"><span data-count="6" data-suffix=""></span><em>+</em></span>
+          <span class="hero-stat-label">Academic databases</span>
+        </div>
+        <div>
+          <span class="hero-stat-num"><span data-count="30" data-suffix=""></span><em>+</em></span>
+          <span class="hero-stat-label">Metadata fields per paper</span>
+        </div>
+        <div>
+          <span class="hero-stat-num"><span data-count="100" data-suffix="%"></span></span>
+          <span class="hero-stat-label">Local. No cloud.</span>
+        </div>
+        <div>
+          <span class="hero-stat-num"><span data-count="0" data-suffix="$"></span></span>
+          <span class="hero-stat-label">Forever free</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">Scroll</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item"><span class="dot"></span> ADS / SciX</div>
+    <div class="marquee-item"><span class="dot"></span> arXiv Preprints</div>
+    <div class="marquee-item"><span class="dot"></span> InspireHEP</div>
+    <div class="marquee-item"><span class="dot"></span> CrossRef</div>
+    <div class="marquee-item"><span class="dot"></span> OpenAlex</div>
+    <div class="marquee-item"><span class="dot"></span> Semantic Scholar</div>
+    <div class="marquee-item"><span class="dot"></span> DataCite</div>
+    <div class="marquee-item"><span class="dot"></span> PubMed / PMC</div>
+    <div class="marquee-item"><span class="dot"></span> Europe PMC</div>
+    <div class="marquee-item"><span class="dot"></span> ORCID</div>
+    <div class="marquee-item"><span class="dot"></span> BibTeX Export</div>
+    <div class="marquee-item"><span class="dot"></span> SQLite + JSON</div>
+    <div class="marquee-item"><span class="dot"></span> Browser Extension</div>
+    <div class="marquee-item"><span class="dot"></span> Local-First</div>
+    <div class="marquee-item"><span class="dot"></span> Offline Ready</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ FEATURES INTRO -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="features-intro">
+      <div class="features-intro-text">
+        <span class="eyebrow">// Why EuKosmos</span>
+        <h2 class="section-title">Built by a researcher,<br>for researchers</h2>
+        <p class="section-sub">
+          Most reference managers treat your data as a service.
+          EuKosmos treats it as yours. Everything saves to a plain folder —
+          JSON files you can read, copy, back up with git, and access
+          without EuKosmos if you ever need to.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:.85rem">
+          <div style="display:flex;align-items:flex-start;gap:.9rem">
+            <span style="color:var(--cyan);font-size:1.1rem;margin-top:.1rem">✓</span>
+            <div>
+              <strong style="font-family:var(--mono);font-size:.82rem;color:var(--text)">DOI-first enrichment cascade</strong>
+              <p style="font-size:.85rem;color:var(--text3);margin-top:.2rem">Paste a DOI and EuKosmos queries all 6 databases in sequence, filling every field it can find — authors with ORCIDs, abstract, BibTeX, citations, OA links.</p>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:.9rem">
+            <span style="color:var(--cyan);font-size:1.1rem;margin-top:.1rem">✓</span>
+            <div>
+              <strong style="font-family:var(--mono);font-size:.82rem;color:var(--text)">SQLite + JSON hybrid</strong>
+              <p style="font-size:.85rem;color:var(--text3);margin-top:.2rem">Data lives in a reliable SQLite database for performance, with human-readable JSON exports always kept in sync alongside it.</p>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:.9rem">
+            <span style="color:var(--cyan);font-size:1.1rem;margin-top:.1rem">✓</span>
+            <div>
+              <strong style="font-family:var(--mono);font-size:.82rem;color:var(--text)">Browser extension</strong>
+              <p style="font-size:.85rem;color:var(--text3);margin-top:.2rem">Add papers and save PDFs from any publisher page in one click — using your institutional access, no CAPTCHA, no manual renaming.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terminal window -->
+      <div class="features-intro-visual reveal">
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <div class="terminal-dot red"></div>
+            <div class="terminal-dot amber"></div>
+            <div class="terminal-dot green"></div>
+            <span class="terminal-url">localhost:8080 · EuKosmos</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd t-type" data-text="python3 serve.py">python3 serve.py</span>
+            </div>
+            <div class="t-line"><span class="t-out t-type" data-text="  [DB] eukosmos.db ready (347 entries)">&nbsp;&nbsp;[DB] eukosmos.db ready (347 entries)</span></div>
+            <div class="t-line"><span class="t-out t-type" data-text="  [OK] Serving at http://localhost:8080">&nbsp;&nbsp;[OK] Serving at http://localhost:8080</span></div>
+            <div style="height:.5rem"></div>
+            <div class="t-line"><span class="t-prompt">→</span><span class="t-key">&nbsp;DOI</span>&nbsp;<span class="t-val">10.1051/0004-6361/201322023</span></div>
+            <div class="t-line"><span class="t-out">&nbsp;&nbsp;🔍 Querying ADS/SciX…</span></div>
+            <div class="t-line"><span class="t-ok">&nbsp;&nbsp;✓ ADS → bibcode, BibTeX, abstract</span></div>
+            <div class="t-line"><span class="t-out">&nbsp;&nbsp;🔍 Querying InspireHEP…</span></div>
+            <div class="t-line"><span class="t-ok">&nbsp;&nbsp;✓ InspireHEP → texkey, inspireId</span></div>
+            <div class="t-line"><span class="t-ok">&nbsp;&nbsp;✓ CrossRef → volume, pages, ISSN</span></div>
+            <div class="t-line"><span class="t-ok">&nbsp;&nbsp;✓ OpenAlex → citedBy, OA status</span></div>
+            <div class="t-line"><span class="t-ok">&nbsp;&nbsp;✓ S2 → TLDR, influential citations</span></div>
+            <div class="t-line"><span class="t-prompt">_</span><span class="t-cursor"></span></div>
+          </div>
+        </div>
+        <div style="margin-top:1.25rem;font-family:var(--mono);font-size:.7rem;color:var(--text3);text-align:center;letter-spacing:.08em">
+          run once · works offline · data stays local
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ FEATURE CARDS -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">// Everything you need</span>
+    <h2 class="section-title">One tool. Every research task.</h2>
+    <p class="section-sub">Designed for the full lifecycle of academic research — not just references.</p>
+
+    <div class="feature-cards reveal">
+
+      <div class="feature-card" style="--card-accent:var(--cyan)">
+        <span class="card-icon">📄</span>
+        <div class="card-title">Literature Papers</div>
+        <p class="card-desc">Full bibliographic management with automatic DOI enrichment from 6 databases. BibTeX import/export, arXiv preprints, OA PDF download, ORCID-linked author details.</p>
+      </div>
+
+      <div class="feature-card" style="--card-accent:var(--amber)">
+        <span class="card-icon">📝</span>
+        <div class="card-title">Research Notes</div>
+        <p class="card-desc">Markdown notes with full formatting, code blocks, equations. Tag, search, and link notes to papers. Your running lab notebook, always local.</p>
+      </div>
+
+      <div class="feature-card" style="--card-accent:var(--green)">
+        <span class="card-icon">💡</span>
+        <div class="card-title">Ideas Tracker</div>
+        <p class="card-desc">Capture research hypotheses with feasibility ratings, stage tracking (backlog → active → published), linked papers, and funding notes.</p>
+      </div>
+
+      <div class="feature-card" style="--card-accent:var(--purple)">
+        <span class="card-icon">📁</span>
+        <div class="card-title">Projects</div>
+        <p class="card-desc">Group papers into research projects. Drill-in view shows only relevant papers. Link notes, todos, and ideas to active projects.</p>
+      </div>
+
+      <div class="feature-card" style="--card-accent:var(--cyan)">
+        <span class="card-icon">📅</span>
+        <div class="card-title">Calendar & Todos</div>
+        <p class="card-desc">Academic calendar syncs with iCal (department, collaboration calendars). Task tracker with priority, deadlines, multi-day events, and linked PDFs.</p>
+      </div>
+
+      <div class="feature-card" style="--card-accent:var(--amber)">
+        <span class="card-icon">🎓</span>
+        <div class="card-title">Curriculum Vitae</div>
+        <p class="card-desc">Build and export your CV directly from EuKosmos. Papers, talks, grants, positions — all in one structured, printable format.</p>
+      </div>
+
+      <div class="feature-card" style="--card-accent:var(--green)">
+        <span class="card-icon">🤝</span>
+        <div class="card-title">Collaborators</div>
+        <p class="card-desc">Track colleagues, institutions, expertise areas, and contact info. Link collaborators to proposals and projects.</p>
+      </div>
+
+      <div class="feature-card" style="--card-accent:var(--red)">
+        <span class="card-icon">📋</span>
+        <div class="card-title">Proposals & Jobs</div>
+        <p class="card-desc">Track grant proposals and job applications with deadlines, status, referee lists, and document management — all in one place.</p>
+      </div>
+
+      <div class="feature-card" style="--card-accent:var(--purple)">
+        <span class="card-icon">💻</span>
+        <div class="card-title">Code Library</div>
+        <p class="card-desc">A personal snippet library for your analysis scripts and tools. Searchable by language, purpose, and tags. No more digging through old directories.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ LOCAL FIRST -->
+<div class="local-first-strip">
+  <div class="container">
+    <div class="local-first-inner">
+      <div class="local-badge">
+        <div class="local-badge-icon">🔒</div>
+        <div class="local-badge-text">
+          <strong>Fully local. Never uploaded.</strong>
+          <span>Your data never touches any server you don't control.</span>
+        </div>
+      </div>
+      <div class="local-badge">
+        <div class="local-badge-icon">📂</div>
+        <div class="local-badge-text">
+          <strong>Plain files on disk.</strong>
+          <span>SQLite + JSON — readable without EuKosmos.</span>
+        </div>
+      </div>
+      <div class="local-badge">
+        <div class="local-badge-icon">🔄</div>
+        <div class="local-badge-text">
+          <strong>Sync anywhere.</strong>
+          <span>Use Dropbox, iCloud, or Git — it's just a folder.</span>
+        </div>
+      </div>
+      <div class="local-badge">
+        <div class="local-badge-icon">⚡</div>
+        <div class="local-badge-text">
+          <strong>Works offline.</strong>
+          <span>All features work without internet. Sync when you're back.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ DATABASES -->
+<section class="section db-section" id="databases">
+  <div class="container">
+    <span class="eyebrow">// DOI Enrichment Cascade</span>
+    <h2 class="section-title">Every major database.<br>One paste.</h2>
+    <p class="section-sub">
+      Paste a DOI (or arXiv ID, ADS bibcode, InspireHEP key) and EuKosmos
+      queries all databases in order, filling the richest metadata possible.
+      No duplicates — each database contributes only what the others don't have.
+    </p>
+
+    <div class="db-cascade-arrows reveal">
+      <span class="db-step">ADS / SciX</span>
+      <span class="db-arrow">→</span>
+      <span class="db-step">InspireHEP</span>
+      <span class="db-arrow">→</span>
+      <span class="db-step">CrossRef</span>
+      <span class="db-arrow">→</span>
+      <span class="db-step">OpenAlex</span>
+      <span class="db-arrow">→</span>
+      <span class="db-step">DataCite</span>
+      <span class="db-arrow">→</span>
+      <span class="db-step">Semantic Scholar</span>
+    </div>
+
+    <div class="db-grid reveal">
+      <div class="db-card">
+        <div class="db-name">ADS / SciX</div>
+        <div class="db-desc">NASA Astrophysics Data System. Canonical source for astronomy & astrophysics. Provides bibcodes, verified BibTeX, readCount, arxivClass, doctype.</div>
+        <div class="db-tags">
+          <span class="db-tag astro">Astronomy</span>
+          <span class="db-tag physics">Astrophysics</span>
+        </div>
+      </div>
+      <div class="db-card">
+        <div class="db-name">InspireHEP</div>
+        <div class="db-desc">The primary database for high-energy physics. Provides texkeys, InspireHEP BibTeX, SCOAP3 OA PDFs, collaboration info.</div>
+        <div class="db-tags">
+          <span class="db-tag physics">HEP</span>
+          <span class="db-tag physics">Particle Physics</span>
+        </div>
+      </div>
+      <div class="db-card">
+        <div class="db-name">CrossRef</div>
+        <div class="db-desc">DOI registration agency. Provides ISSN, publisher, license, funder information, author details with ORCID identifiers.</div>
+        <div class="db-tags">
+          <span class="db-tag all">All fields</span>
+        </div>
+      </div>
+      <div class="db-card">
+        <div class="db-name">OpenAlex</div>
+        <div class="db-desc">Open scholarly graph. Provides OA status & URL, citation count, concepts, subject classification, PMC links.</div>
+        <div class="db-tags">
+          <span class="db-tag all">All fields</span>
+          <span class="db-tag bio">Open Access</span>
+        </div>
+      </div>
+      <div class="db-card">
+        <div class="db-name">DataCite</div>
+        <div class="db-desc">Metadata for research datasets and software. Provides resource type, funding info for non-journal outputs.</div>
+        <div class="db-tags">
+          <span class="db-tag all">Datasets</span>
+          <span class="db-tag cs">Software</span>
+        </div>
+      </div>
+      <div class="db-card">
+        <div class="db-name">Semantic Scholar</div>
+        <div class="db-desc">AI-powered research graph. Provides TLDRs, influential citation counts, field-of-study classification, S2 IDs.</div>
+        <div class="db-tags">
+          <span class="db-tag all">All fields</span>
+          <span class="db-tag cs">AI / CS</span>
+        </div>
+      </div>
+      <div class="db-card">
+        <div class="db-name">arXiv</div>
+        <div class="db-desc">Open access preprint server. Direct preprint PDF download, category classification, version history.</div>
+        <div class="db-tags">
+          <span class="db-tag physics">Physics</span>
+          <span class="db-tag cs">CS</span>
+          <span class="db-tag astro">Math</span>
+        </div>
+      </div>
+      <div class="db-card">
+        <div class="db-name">PubMed / PMC</div>
+        <div class="db-desc">NLM biomedical literature. PMID and PMCID identifiers, open access full text for NIH-funded research.</div>
+        <div class="db-tags">
+          <span class="db-tag bio">Biomedical</span>
+          <span class="db-tag bio">Life Sciences</span>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:1.5rem;font-family:var(--mono);font-size:.72rem;color:var(--text3);text-align:center;letter-spacing:.05em">
+      Fetch log shows exactly which database contributed each field — full transparency, always.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ WORKFLOW -->
+<section class="section section-alt" id="workflow">
+  <div class="container">
+    <span class="eyebrow">// How It Works</span>
+    <h2 class="section-title">Up in three minutes.</h2>
+    <p class="section-sub">EuKosmos runs entirely on your machine. No account, no cloud, no subscription. Just Python and a browser.</p>
+
+    <div class="workflow-steps">
+      <div class="workflow-step reveal reveal-delay-1">
+        <div class="workflow-num">01</div>
+        <div class="workflow-step-title">Download</div>
+        <p class="workflow-step-desc">Download EuKosmos for Mac or Windows. Or clone from GitHub if you prefer.</p>
+      </div>
+      <div class="workflow-step reveal reveal-delay-2">
+        <div class="workflow-num">02</div>
+        <div class="workflow-step-title">Run</div>
+        <p class="workflow-step-desc">Open Terminal. Run <code class="mono" style="color:var(--cyan);font-size:.8rem">python3 serve.py</code>. EuKosmos starts on localhost:8080.</p>
+      </div>
+      <div class="workflow-step reveal reveal-delay-3">
+        <div class="workflow-num">03</div>
+        <div class="workflow-step-title">Add papers</div>
+        <p class="workflow-step-desc">Paste a DOI or arXiv ID. EuKosmos fetches everything automatically from all databases.</p>
+      </div>
+      <div class="workflow-step reveal reveal-delay-4">
+        <div class="workflow-num">04</div>
+        <div class="workflow-step-title">Research</div>
+        <p class="workflow-step-desc">Write notes, track ideas, manage your CV, plan collaborations. Everything in one place.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:4rem;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:1.5rem 2rem;max-width:640px;margin-left:auto;margin-right:auto" class="reveal">
+      <div style="font-family:var(--mono);font-size:.72rem;color:var(--text3);margin-bottom:.75rem;letter-spacing:.1em">QUICK START</div>
+      <div style="font-family:var(--mono);font-size:.85rem;line-height:2">
+        <div><span style="color:var(--text3)"># Clone and run</span></div>
+        <div><span style="color:var(--cyan)">git</span> <span style="color:var(--text)">clone https://github.com/rmajidul/eukosmos</span></div>
+        <div><span style="color:var(--cyan)">cd</span> <span style="color:var(--text)">eukosmos</span></div>
+        <div><span style="color:var(--cyan)">python3</span> <span style="color:var(--text)">serve.py</span></div>
+        <div style="color:var(--text3)"># Open Chrome → http://localhost:8080</div>
+      </div>
+      <button class="copy-btn" data-copy="git clone https://github.com/rmajidul/eukosmos&#10;cd eukosmos&#10;python3 serve.py" style="margin-top:1rem;background:none;border:1px solid var(--border);color:var(--text3);font-family:var(--mono);font-size:.7rem;padding:.3rem .8rem;border-radius:3px;cursor:pointer;transition:all .2s" onmouseover="this.style.borderColor='var(--cyan)';this.style.color='var(--cyan)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text3)'">Copy</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ EXTENSION -->
+<section class="section" id="extension">
+  <div class="container">
+    <div class="extension-layout">
+      <div>
+        <span class="eyebrow">// Browser Extension</span>
+        <h2 class="section-title">One click.<br>Paper saved.</h2>
+        <p class="section-sub">
+          The EuKosmos Chrome extension detects papers on any publisher page,
+          checks if it's in your library, and saves the PDF using your browser's
+          authenticated session — institutional access, VPN, whatever you have.
+          No CAPTCHA. No manual renaming. Files saved as
+          <code class="mono" style="color:var(--cyan);font-size:.85em">Author_Bibcode_Original.pdf</code> automatically.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem">
+          <div style="display:flex;gap:.75rem;align-items:flex-start">
+            <span style="color:var(--green);font-size:1rem;margin-top:.1rem">●</span>
+            <span style="font-size:.88rem;color:var(--text2)"><strong style="color:var(--text);font-family:var(--mono);font-size:.82rem">Publisher pages detected automatically</strong> — Springer, Elsevier, Nature, APS, IOP, ACS, arXiv, InspireHEP, ADS and more</span>
+          </div>
+          <div style="display:flex;gap:.75rem;align-items:flex-start">
+            <span style="color:var(--green);font-size:1rem;margin-top:.1rem">●</span>
+            <span style="font-size:.88rem;color:var(--text2)"><strong style="color:var(--text);font-family:var(--mono);font-size:.82rem">New papers added with full enrichment</strong> — DOI cascade runs automatically on add</span>
+          </div>
+          <div style="display:flex;gap:.75rem;align-items:flex-start">
+            <span style="color:var(--green);font-size:1rem;margin-top:.1rem">●</span>
+            <span style="font-size:.88rem;color:var(--text2)"><strong style="color:var(--text);font-family:var(--mono);font-size:.82rem">Real-time sync</strong> — EuKosmos updates instantly without page refresh via Server-Sent Events</span>
+          </div>
+        </div>
+        <a href="#download" class="btn-secondary" style="display:inline-flex">
+          Install Extension
+        </a>
+      </div>
+
+      <!-- Extension popup mockup -->
+      <div class="reveal" style="display:flex;justify-content:center">
+        <div class="ext-popup-mockup">
+          <div class="ext-header">
+            <div class="ext-logo">EUKOSMOS // CONNECTOR</div>
+            <div class="ext-status">eukosmos ✓</div>
+          </div>
+          <div class="ext-paper">
+            <div class="ext-paper-title">Radio emission at the centre of the galaxy cluster Abell 3560: evidence for core sloshing?</div>
+            <div class="ext-paper-meta">Venturi et al. · Astronomy &amp; Astrophysics · 2013</div>
+            <div class="ext-doi">DOI: 10.1051/0004-6361/201322023</div>
+          </div>
+          <div class="ext-badge">
+            <span class="ext-badge-icon">＋</span>
+            <span class="ext-badge-text">Not in your EuKosmos library</span>
+          </div>
+          <div class="ext-actions">
+            <div class="ext-btn primary">➕ &nbsp;Add to Library + Save PDF</div>
+            <div class="ext-btn dim">↗ &nbsp;Open in EuKosmos</div>
+          </div>
+          <div style="padding:.75rem 1rem;border-top:1px solid var(--border);font-family:var(--mono);font-size:.62rem;color:var(--text4);display:flex;justify-content:space-between;align-items:center">
+            <span>Port: 8080</span>
+            <span style="color:var(--text3)">☀️ · ⚙</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ TESTIMONIALS -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">// Researchers say</span>
+    <h2 class="section-title">Built for the way<br>researchers actually work.</h2>
+
+    <div class="testimonial-grid reveal">
+      <div class="testimonial-card">
+        <p class="testimonial-text">Finally a reference manager that doesn't lock my data behind a subscription. The DOI cascade is extraordinary — paste a DOI and everything fills in from ADS to Semantic Scholar automatically.</p>
+        <div class="testimonial-author">
+          <strong>Astrophysicist</strong>
+          Radio galaxy research, European observatory
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">The browser extension changed how I collect papers. One click from the publisher page and the PDF is saved with the right filename, right in my EuKosmos folder. No more Downloads folder chaos.</p>
+        <div class="testimonial-author">
+          <strong>HEP Researcher</strong>
+          Particle physics experiment, CERN
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">I manage papers, proposals, collaborators, and my CV all in one place. And because it's a local folder, I can sync it with my institutional Dropbox without worrying about data privacy.</p>
+        <div class="testimonial-author">
+          <strong>Postdoctoral Fellow</strong>
+          Observational cosmology
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ DOWNLOAD -->
+<section class="section" id="download">
+  <div class="container">
+    <span class="eyebrow">// Get EuKosmos</span>
+    <h2 class="section-title">Free. Forever. Local.</h2>
+    <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center">
+      No account required. No subscription. No data leaves your machine.
+    </p>
+
+    <div class="download-grid reveal">
+      <div class="download-card" style="--card-accent:var(--text3)">
+        <div class="download-icon">🍎</div>
+        <div class="download-os">macOS</div>
+        <div class="download-version" style="font-family:var(--mono);font-size:.7rem;color:var(--text3)">v1.0 · macOS 12+</div>
+        <button class="download-btn cyan">⬇ Download .app</button>
+      </div>
+      <div class="download-card" style="--card-accent:var(--cyan)">
+        <div class="download-icon">🪟</div>
+        <div class="download-os">Windows</div>
+        <div class="download-version" style="font-family:var(--mono);font-size:.7rem;color:var(--text3)">v1.0 · Windows 10+</div>
+        <button class="download-btn amber">⬇ Download .exe</button>
+      </div>
+      <div class="download-card" style="--card-accent:var(--text3)">
+        <div class="download-icon">⎇</div>
+        <div class="download-os">GitHub</div>
+        <div class="download-version" style="font-family:var(--mono);font-size:.7rem;color:var(--text3)">Python · any OS</div>
+        <a href="https://github.com/rmajidul/eukosmos" target="_blank" rel="noopener">
+          <button class="download-btn green">View Source</button>
+        </a>
+      </div>
+    </div>
+
+    <p style="margin-top:2rem;font-family:var(--mono);font-size:.72rem;color:var(--text3);text-align:center">
+      Requires Python 3.8+ · Chrome or Edge for full features · No pip installs needed
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ COMMUNITY -->
+<section class="section section-alt community-section" id="community">
+  <div class="container" style="text-align:center">
+    <div class="coming-soon-badge">Coming Soon</div>
+    <span class="eyebrow">// Community</span>
+    <h2 class="section-title" style="max-width:600px;margin:0 auto .75rem">Share knowledge.<br>Advance research together.</h2>
+    <p class="section-sub" style="margin:0 auto 3rem;text-align:center">
+      EuKosmos users will be able to push public notes and research insights
+      to the community — tagged by field, searchable by topic. A crowd-sourced
+      knowledge base built by researchers, for researchers.
+    </p>
+
+    <div class="community-features">
+      <div class="comm-feature reveal reveal-delay-1">
+        <div class="comm-feature-icon">📡</div>
+        <div class="comm-feature-title">Field-tagged notes</div>
+        <p class="comm-feature-desc">Push any note public with subject tags. Researchers in your field discover it when working on the same topic.</p>
+      </div>
+      <div class="comm-feature reveal reveal-delay-2">
+        <div class="comm-feature-icon">🔐</div>
+        <div class="comm-feature-title">ORCID login</div>
+        <p class="comm-feature-desc">No new account. Login with your existing ORCID identifier — the universal academic identity standard.</p>
+      </div>
+      <div class="comm-feature reveal reveal-delay-3">
+        <div class="comm-feature-icon">📊</div>
+        <div class="comm-feature-title">Papers of the week</div>
+        <p class="comm-feature-desc">Automatically curated feeds showing what EuKosmos users are reading in each research field this week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ CTA -->
+<section class="section cta-section">
+  <div class="cta-glow"></div>
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="github-stars">⭐ &nbsp;Star on GitHub · help researchers find EuKosmos</div>
+      <h2 class="section-title" style="margin-bottom:.75rem">Start managing your<br>research today.</h2>
+      <p style="color:var(--text2);font-size:.95rem;margin-bottom:2.5rem;line-height:1.8">
+        Free forever. Your data, your folder, your machine.<br>
+        No account. No subscription. No lock-in.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="#download" class="btn-primary">⬇ &nbsp;Download EuKosmos</a>
+        <a href="/docs" class="btn-secondary">📖 &nbsp;Read the Docs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="font-family:var(--mono);font-size:1rem;letter-spacing:.12em;color:var(--text)">EUKOSMOS</div>
+        <p>An all-in-one academic research manager. Local-first, open source, built by a researcher for researchers.</p>
+        <div style="margin-top:1.2rem;display:flex;gap:1rem">
+          <a href="https://github.com/rmajidul/eukosmos" style="font-family:var(--mono);font-size:.72rem;color:var(--text3)" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://twitter.com/eukosmos" style="font-family:var(--mono);font-size:.72rem;color:var(--text3)" target="_blank" rel="noopener">Twitter / X</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Product</div>
+        <ul class="footer-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#databases">Databases</a></li>
+          <li><a href="#extension">Browser Extension</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="/changelog">Changelog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="/docs">Documentation</a></li>
+          <li><a href="/docs/quickstart">Quick Start</a></li>
+          <li><a href="/tutorials">Tutorials</a></li>
+          <li><a href="/docs/bibtex">BibTeX Guide</a></li>
+          <li><a href="/docs/extension">Extension Setup</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Community</div>
+        <ul class="footer-links">
+          <li><a href="https://github.com/rmajidul/eukosmos/issues" target="_blank" rel="noopener">Report a Bug</a></li>
+          <li><a href="https://github.com/rmajidul/eukosmos/discussions" target="_blank" rel="noopener">Discussions</a></li>
+          <li><a href="/roadmap">Roadmap</a></li>
+          <li><a href="/community">Community Notes</a></li>
+          <li><a href="mailto:hello@eukosmos.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 EuKosmos · Built for researchers, by a researcher</span>
+      <span>
+        <a href="/privacy">Privacy</a> ·
+        <a href="/terms">Terms</a> ·
+        <a href="https://github.com/rmajidul/eukosmos" target="_blank" rel="noopener">Open Source (MIT)</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
