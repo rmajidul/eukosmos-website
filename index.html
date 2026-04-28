@@ -577,106 +577,156 @@
     </p>
 
     <div class="compare-wrap reveal">
-      <table class="compare-table">
-        <thead>
-          <tr>
-            <th class="compare-feature-col">What researchers need</th>
-            <th>Mendeley</th>
-            <th>Zotero</th>
-            <th>EndNote</th>
-            <th class="compare-ek-col">EuKosmos</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="compare-feature">Local-first, no cloud required</td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-partial">Partial</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-yes">✓</span></td>
-          </tr>
-          <tr>
-            <td class="compare-feature">Free forever, no storage quota</td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-partial">300 MB</span></td>
-            <td><span class="cmp-no">$275</span></td>
-            <td><span class="cmp-yes">✓</span></td>
-          </tr>
-          <tr>
-            <td class="compare-feature">Auto DOI enrichment (6 databases)</td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-yes">✓</span></td>
-          </tr>
-          <tr>
-            <td class="compare-feature">BibTeX import / export</td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-yes">✓</span></td>
-          </tr>
-          <tr>
-            <td class="compare-feature">Full research workspace <span class="compare-note">(notes, CV, ideas, todos, proposals…)</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-yes">✓</span></td>
-          </tr>
-          <tr>
-            <td class="compare-feature">Browser extension</td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓ <em>*</em></span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-yes">✓ <em>**</em></span></td>
-          </tr>
-          <tr>
-            <td class="compare-feature">Your data in plain files</td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-partial">Partial</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-yes">✓</span></td>
-          </tr>
-          <tr>
-            <td class="compare-feature">Privacy <span class="compare-note">(no vendor analytics)</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-yes">✓</span></td>
-          </tr>
-          <tr>
-            <td class="compare-feature">ADS / InspireHEP integration</td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-no">✗</span></td>
-            <td><span class="cmp-yes">✓</span></td>
-          </tr>
-          <tr class="compare-row-gap">
-            <td colspan="5"></td>
-          </tr>
-          <tr class="compare-honest-row">
-            <td class="compare-feature">Built-in PDF annotation <em>†</em></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-not-yet">Not yet</span></td>
-          </tr>
-          <tr class="compare-honest-row">
-            <td class="compare-feature">Word / Google Docs plugin</td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-not-yet">Planned</span></td>
-          </tr>
-          <tr class="compare-honest-row">
-            <td class="compare-feature">Mobile app</td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-partial">✓</span></td>
-            <td><span class="cmp-not-yet">Planned</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="compare-premium">
+
+        <!-- Column headers -->
+        <div class="compare-cols">
+          <div class="compare-col-feature"></div>
+          <div class="compare-col-tool">
+            <div class="tool-logo tool-mendeley">
+              <span class="tool-initial">M</span>
+              <span class="tool-name">Mendeley</span>
+              <span class="tool-owner">by Elsevier</span>
+            </div>
+          </div>
+          <div class="compare-col-tool">
+            <div class="tool-logo tool-zotero">
+              <span class="tool-initial">Z</span>
+              <span class="tool-name">Zotero</span>
+              <span class="tool-owner">non-profit</span>
+            </div>
+          </div>
+          <div class="compare-col-tool">
+            <div class="tool-logo tool-endnote">
+              <span class="tool-initial">E</span>
+              <span class="tool-name">EndNote</span>
+              <span class="tool-owner">by Clarivate</span>
+            </div>
+          </div>
+          <div class="compare-col-tool compare-col-ek">
+            <div class="tool-logo tool-ek">
+              <span class="tool-initial ek-initial">✦</span>
+              <span class="tool-name ek-name">EuKosmos</span>
+              <span class="tool-owner ek-owner">open source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rows -->
+        <div class="compare-rows">
+
+          <div class="compare-section-label">Core principles</div>
+
+          <div class="compare-row">
+            <div class="cr-feature">Local-first, no cloud required</div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-dim">Partial</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes">✓</span></div>
+          </div>
+
+          <div class="compare-row">
+            <div class="cr-feature">Free forever, no storage quota</div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-dim">300 MB</span></div>
+            <div class="cr-val"><span class="cv-no">$275</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes">✓</span></div>
+          </div>
+
+          <div class="compare-row">
+            <div class="cr-feature">Privacy — no vendor analytics</div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes">✓</span></div>
+          </div>
+
+          <div class="compare-row">
+            <div class="cr-feature">Your data in plain files</div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-dim">Partial</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes">✓</span></div>
+          </div>
+
+          <div class="compare-section-label">Metadata &amp; enrichment</div>
+
+          <div class="compare-row">
+            <div class="cr-feature">Auto DOI enrichment — 6 databases</div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes cv-unique">Only EuKosmos</span></div>
+          </div>
+
+          <div class="compare-row">
+            <div class="cr-feature">ADS / InspireHEP integration</div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes cv-unique">Only EuKosmos</span></div>
+          </div>
+
+          <div class="compare-row">
+            <div class="cr-feature">BibTeX import / export</div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes">✓</span></div>
+          </div>
+
+          <div class="compare-section-label">Research workflow</div>
+
+          <div class="compare-row">
+            <div class="cr-feature">Full research workspace
+              <span class="cr-sub">notes · CV · ideas · todos · proposals · jobs</span>
+            </div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes cv-unique">Only EuKosmos</span></div>
+          </div>
+
+          <div class="compare-row">
+            <div class="cr-feature">Browser extension
+              <span class="cr-sub">save PDFs using your browser session</span>
+            </div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓ <em style="font-size:.75em;opacity:.6">*</em></span></div>
+            <div class="cr-val"><span class="cv-no">✗</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-yes">✓ <em style="font-size:.75em;opacity:.7">**</em></span></div>
+          </div>
+
+          <div class="compare-section-label" style="color:var(--amber);border-color:rgba(255,184,48,.15)">Honest gaps — in development</div>
+
+          <div class="compare-row compare-row-honest">
+            <div class="cr-feature" style="color:var(--text2)">Built-in PDF annotation
+              <span class="cr-sub cr-sub-fn"><em>† opens in your favourite viewer instead — see footnote</em></span>
+            </div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-soon">Not yet</span></div>
+          </div>
+
+          <div class="compare-row compare-row-honest">
+            <div class="cr-feature" style="color:var(--text2)">Word / Google Docs plugin</div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-planned">Planned</span></div>
+          </div>
+
+          <div class="compare-row compare-row-honest">
+            <div class="cr-feature" style="color:var(--text2)">Mobile app</div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val"><span class="cv-dim">✓</span></div>
+            <div class="cr-val cr-val-ek"><span class="cv-planned">Planned</span></div>
+          </div>
+
+        </div><!-- .compare-rows -->
+      </div><!-- .compare-premium -->
     </div>
 
     <!-- Footnotes -->
