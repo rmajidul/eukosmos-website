@@ -1,10 +1,7 @@
 # Cloudflare Pages — _redirects
-# These rules handle URL routing and redirects
+# Only relative paths allowed (no absolute URLs).
+# www→apex is handled automatically by Cloudflare DNS.
+# External links (GitHub etc.) go in the HTML directly.
 
-# www → apex redirect
-https://www.eukosmos.com/* https://eukosmos.com/:splat 301
-
-# Friendly URL aliases
 /download   /#download   302
-/github     https://github.com/rmajidul/eukosmos   302
 /docs       /docs/index.html   200

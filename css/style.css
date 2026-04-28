@@ -64,8 +64,8 @@ img { max-width: 100%; }
 /* ── Typography ────────────────────────────────────────────────────── */
 .eyebrow {
   font-family: var(--mono);
-  font-size: .72rem;
-  letter-spacing: .25em;
+  font-size: .82rem;
+  letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--cyan);
   display: block;
@@ -79,7 +79,7 @@ h4 { font-size: 1.1rem; }
 .section-title { margin-bottom: .75rem; }
 .section-sub {
   color: var(--text2);
-  font-size: clamp(.95rem, 1.5vw, 1.1rem);
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
   max-width: 60ch;
   line-height: 1.8;
   margin-bottom: 3.5rem;
@@ -126,7 +126,7 @@ nav.scrolled {
 .nav-links a:hover { color: var(--text); opacity: 1; }
 .nav-cta {
   font-family: var(--mono);
-  font-size: .78rem;
+  font-size: .87rem;
   padding: .5rem 1.2rem;
   border: 1px solid var(--cyan);
   color: var(--cyan);
@@ -179,7 +179,7 @@ nav.scrolled {
   align-items: center;
   gap: .6rem;
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   letter-spacing: .18em;
   color: var(--cyan);
   text-transform: uppercase;
@@ -275,7 +275,7 @@ nav.scrolled {
 }
 .hero-stat-num em { color: var(--cyan); font-style: normal; }
 .hero-stat-label {
-  font-size: .78rem;
+  font-size: .87rem;
   color: var(--text3);
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -290,7 +290,7 @@ nav.scrolled {
   align-items: center;
   gap: .5rem;
   font-family: var(--mono);
-  font-size: .65rem;
+  font-size: .8rem;
   letter-spacing: .15em;
   color: var(--text4);
   text-transform: uppercase;
@@ -329,7 +329,7 @@ nav.scrolled {
   align-items: center;
   gap: .65rem;
   font-family: var(--mono);
-  font-size: .75rem;
+  font-size: .85rem;
   color: var(--text3);
   letter-spacing: .1em;
   white-space: nowrap;
@@ -383,13 +383,13 @@ nav.scrolled {
   flex: 1;
   text-align: center;
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   color: var(--text3);
 }
 .terminal-body {
   padding: 1.5rem;
   font-family: var(--mono);
-  font-size: .78rem;
+  font-size: .87rem;
   line-height: 2;
 }
 .t-line { display: flex; gap: .75rem; }
@@ -479,13 +479,13 @@ nav.scrolled {
 .db-card:hover { background: var(--panel2); }
 .db-name {
   font-family: var(--mono);
-  font-size: .78rem;
+  font-size: .87rem;
   font-weight: 500;
   color: var(--text);
   letter-spacing: .05em;
 }
 .db-desc {
-  font-size: .78rem;
+  font-size: .87rem;
   color: var(--text3);
   line-height: 1.5;
 }
@@ -497,7 +497,7 @@ nav.scrolled {
 }
 .db-tag {
   font-family: var(--mono);
-  font-size: .62rem;
+  font-size: .8rem;
   padding: .15rem .5rem;
   border-radius: 2rem;
   letter-spacing: .06em;
@@ -509,7 +509,7 @@ nav.scrolled {
 .db-tag.cs        { background: rgba(255,68,102,.1);  color: var(--red); }
 .db-cascade-label {
   font-family: var(--mono);
-  font-size: .68rem;
+  font-size: .8rem;
   color: var(--text4);
   text-align: center;
   padding: 1rem 0 .5rem;
@@ -526,7 +526,7 @@ nav.scrolled {
 }
 .db-step {
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   color: var(--text2);
   padding: .3rem .8rem;
   border: 1px solid var(--border);
@@ -568,7 +568,7 @@ nav.scrolled {
   border-radius: 50%;
   background: var(--panel);
   font-family: var(--mono);
-  font-size: .78rem;
+  font-size: .87rem;
   color: var(--cyan);
   margin-bottom: 1.5rem;
   position: relative;
@@ -626,7 +626,7 @@ nav.scrolled {
   align-items: center;
   gap: .4rem;
   font-family: var(--mono);
-  font-size: .65rem;
+  font-size: .8rem;
   color: var(--green);
 }
 .ext-status::before {
@@ -648,7 +648,7 @@ nav.scrolled {
 }
 .ext-paper-meta {
   font-family: var(--mono);
-  font-size: .65rem;
+  font-size: .8rem;
   color: var(--text3);
 }
 .ext-doi {
@@ -657,7 +657,7 @@ nav.scrolled {
   border: 1px solid rgba(51,217,255,.25);
   color: var(--cyan);
   font-family: var(--mono);
-  font-size: .62rem;
+  font-size: .8rem;
   padding: .15rem .5rem;
   border-radius: 2rem;
   margin-top: .4rem;
@@ -669,7 +669,7 @@ nav.scrolled {
   align-items: center;
   gap: .6rem;
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
 }
 .ext-badge-icon { font-size: .9rem; }
 .ext-badge-text { color: var(--amber); }
@@ -678,7 +678,7 @@ nav.scrolled {
   padding: .65rem .9rem;
   border-radius: 3px;
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -720,13 +720,13 @@ nav.scrolled {
 .download-card:hover { border-color: var(--border2); transform: translateY(-3px); box-shadow: 0 20px 40px rgba(0,0,0,.3); }
 .download-icon { font-size: 2.5rem; }
 .download-os { font-family: var(--serif); font-size: 1.2rem; color: var(--text); }
-.download-version { font-family: var(--mono); font-size: .7rem; color: var(--text3); }
+.download-version { font-family: var(--mono); font-size: .82rem; color: var(--text3); }
 .download-btn {
   margin-top: .5rem;
   padding: .6rem 1.4rem;
   border-radius: var(--radius);
   font-family: var(--mono);
-  font-size: .75rem;
+  font-size: .85rem;
   letter-spacing: .05em;
   border: 1px solid;
   cursor: pointer;
@@ -772,7 +772,7 @@ nav.scrolled {
 }
 .testimonial-author {
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   color: var(--text3);
 }
 .testimonial-author strong {
@@ -802,7 +802,7 @@ nav.scrolled {
   align-items: center;
   gap: .5rem;
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   letter-spacing: .18em;
   color: var(--purple);
   text-transform: uppercase;
@@ -868,11 +868,11 @@ nav.scrolled {
 .local-badge-text strong {
   display: block;
   font-family: var(--mono);
-  font-size: .78rem;
+  font-size: .87rem;
   color: var(--text);
   margin-bottom: .15rem;
 }
-.local-badge-text span { font-size: .78rem; color: var(--text3); }
+.local-badge-text span { font-size: .87rem; color: var(--text3); }
 
 /* ── Newsletter / GitHub CTA ───────────────────────────────────────── */
 .cta-section {
@@ -894,7 +894,7 @@ nav.scrolled {
   align-items: center;
   gap: .5rem;
   font-family: var(--mono);
-  font-size: .75rem;
+  font-size: .85rem;
   color: var(--text3);
   padding: .35rem .9rem;
   border: 1px solid var(--border);
@@ -925,7 +925,7 @@ footer {
 }
 .footer-col-title {
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   letter-spacing: .15em;
   text-transform: uppercase;
   color: var(--text3);
@@ -941,7 +941,7 @@ footer {
   padding-top: 2rem;
   border-top: 1px solid var(--border);
   font-family: var(--mono);
-  font-size: .7rem;
+  font-size: .82rem;
   color: var(--text4);
   flex-wrap: wrap;
   gap: 1rem;
@@ -1004,7 +1004,7 @@ footer {
 }
 .compare-table thead th {
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--text3);
@@ -1038,7 +1038,7 @@ footer {
   font-size: .88rem;
 }
 .compare-note {
-  font-size: .78rem;
+  font-size: .87rem;
   color: var(--text3);
   display: block;
   margin-top: .1rem;
@@ -1061,12 +1061,12 @@ footer {
 }
 .cmp-partial {
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   color: var(--text3);
 }
 .cmp-not-yet {
   font-family: var(--mono);
-  font-size: .68rem;
+  font-size: .8rem;
   color: var(--amber);
   padding: .2rem .55rem;
   border: 1px solid rgba(255,184,48,.3);
@@ -1107,7 +1107,7 @@ footer {
 }
 .compare-fn-mark {
   font-family: var(--mono);
-  font-size: .72rem;
+  font-size: .82rem;
   color: var(--amber);
   flex-shrink: 0;
   margin-top: .15rem;
@@ -1147,7 +1147,7 @@ footer {
 }
 .cite-copy-btn {
   font-family: var(--mono);
-  font-size: .68rem;
+  font-size: .8rem;
   background: none;
   border: 1px solid var(--border2);
   color: var(--cyan);
@@ -1201,7 +1201,7 @@ footer {
 }
 .sponsor-context-label {
   font-family: var(--mono);
-  font-size: .65rem;
+  font-size: .8rem;
   letter-spacing: .15em;
   text-transform: uppercase;
   color: var(--text3);
@@ -1231,7 +1231,7 @@ footer {
   line-height: 1;
 }
 .sponsor-compare-what {
-  font-size: .72rem;
+  font-size: .82rem;
   color: var(--text3);
   line-height: 1.4;
   text-align: center;
@@ -1262,7 +1262,7 @@ footer {
 }
 .sponsor-btn em {
   font-style: normal;
-  font-size: .72rem;
+  font-size: .82rem;
   opacity: .7;
 }
 .sponsor-btn-gh {
