@@ -1,6 +1,10 @@
 # Cloudflare Pages — _redirects
-# Only relative paths allowed here.
-# www → apex is handled automatically by Cloudflare DNS.
+# These rules handle URL routing and redirects
 
+# www → apex redirect
+https://www.eukosmos.com/* https://eukosmos.com/:splat 301
+
+# Friendly URL aliases
 /download   /#download   302
 /github     https://github.com/rmajidul/eukosmos   302
+/docs       /docs/index.html   200
