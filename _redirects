@@ -1,7 +1,2 @@
-# Cloudflare Pages — _redirects
-# Only relative paths allowed (no absolute URLs).
-# www→apex is handled automatically by Cloudflare DNS.
-# External links (GitHub etc.) go in the HTML directly.
-
-/download   /#download   302
-/docs       /docs/index.html   200
+# EuKosmos redirects
+/docs /docs/index.html 200
